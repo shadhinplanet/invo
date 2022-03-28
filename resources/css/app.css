@@ -1,0 +1,18 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.formLabel{
+    @apply cursor-pointer block text-sm mb-1
+}
+.formInput{
+    @apply w-full rounded-sm
+}
+.ck-editor__editable_inline {
+    min-height: 300px;
+}
+
+svg{
+    width: 100%;
+}
