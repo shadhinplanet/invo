@@ -18,10 +18,10 @@ Route::get('/', function () {
 
 
 // Backend routes
-Route::prefix('/')->middleware(['auth','verified'])->group(function () {
+Route::prefix('dashboard')->middleware(['auth','verified'])->group(function () {
 
     // Dashboard
-    Route::get('dashboard', function () {
+    Route::get('/', function () {
         // Get current user
         $user = User::find(Auth::user()->id);
         // return response

@@ -6,7 +6,7 @@ use App\Events\ActivityEvent;
 use App\Models\ActivityLog as ModelsActivityLog;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class ActivityLog implements ShouldQueue
+class ActivityLog
 {
     /**
      * Create the event listener.
