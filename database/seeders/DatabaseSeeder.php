@@ -17,15 +17,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        User::factory(10)->create();
         User::create([
-            'name'  => 'Shadhin Ahmed',
-            'email' => 'a@a.com',
-            'company' => 'PixCafe Network',
-            'phone' => '09696 123456',
-            'country' => 'Bangladesh',
-            'password' => bcrypt('123'),
-            'thumbnail' => 'https://picsum.photos/300',
-            'role' => 'admin'
+            'name'              => 'Shadhin Ahmed',
+            'email'             => 'a@a.com',
+            'company'           => 'PixCafe Network',
+            'phone'             => '09696 123456',
+            'country'           => 'Bangladesh',
+            'password'          => bcrypt('123'),
+            'email_verified_at' => now(),
+            'thumbnail'         => 'https://picsum.photos/300',
+            'role'              => 'admin'
         ]);
         // User::create([
         //     'name'  => 'Demo User',
@@ -38,9 +40,9 @@ class DatabaseSeeder extends Seeder
         // ]);
 
 
-        Client::factory(5)->create();
+        Client::factory(20)->create();
 
-        Task::factory(30)->create();
+        Task::factory(350)->create();
 
         // Invoice::factory(10)->create();
 
