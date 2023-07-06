@@ -37,7 +37,7 @@
         </header>
         @include('layouts.messages')
         <!-- Page Content -->
-        <main class="">
+        <main class="max-w-7xl mx-auto">
             {{ $slot }}
         </main>
     </div>
