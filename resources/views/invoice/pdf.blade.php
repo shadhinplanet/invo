@@ -180,13 +180,11 @@
                 </div>
                 <div class="single_head_title">
                     <span class="w-1/3">INVOICE DATE</span>
-                    <strong class="w-3/5"><span class="mx-5">:</span> {{ Carbon\Carbon::now()->format('d M, Y')
-                        }}</strong>
+                    <strong class="w-3/5"><span class="mx-5">:</span> 10 Aug, 2022 </strong>
                 </div>
                 <div class="single_head_title">
                     <span class="w-1/3">INVOICE DUE</span>
-                    <strong class="w-3/5"><span class="mx-5">:</span> {{ Carbon\Carbon::now()->addDays(5)->format('d M,
-                        Y') }}</strong>
+                    <strong class="w-3/5"><span class="mx-5">:</span> 17 Aug, 2022</strong>
                 </div>
             </div>
             <div class="header_logo">
@@ -223,8 +221,8 @@
                 <h2>FROM</h2>
                 <p><strong class="">{{ $user->name }}</strong></p>
                 <p><small class="">{{ $user->company }}</small></p>
-                <p><small class="">{{ $user->email }}</small></p>
-                <p><small class="">{{ $user->phone }}</small></p>
+                <p><small class="">shadhinplanet@gmail.com</small></p>
+                <p><small class="">+880 1773 777 223</small></p>
                 <p><small class="">{{ $user->country }}</small></p>
             </div>
         </div>
